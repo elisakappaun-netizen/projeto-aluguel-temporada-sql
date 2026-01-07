@@ -19,3 +19,12 @@ INSERT INTO Propriedades (nome_imovel, capacidade_hospe, preco_noite, fk_enderec
    ('Choupana na Serra', 2, 250.00, 3),
    ('Studio Moderno', 2, 150.00, 4);
 ;
+-- parte 03
+
+--2. Inserir dados para a tabela Reservas.
+
+insert into Reservas (data_inicio, data_fim, valor_total, fk_hospede, fk_propriedade ) values
+('2026-02-10', '2026-02-15', 1200.00, 2, 3),
+('2026-03-01', '2026-03-07', 2100.00, 3, 1);
+
+

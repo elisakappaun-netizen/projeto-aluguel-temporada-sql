@@ -24,3 +24,15 @@ drop table
     fk_endereco int not null references Enderecos (id_endereco) 	
  );
  
+--Parte 3
+--1. Criar a tabela reservas que relacione Hospedes e Propriedades, contendo também Data_Inicio, Data_Fim e Valor_Total. (no arquivo de estrutura)
+
+create table Reservas (
+	id_reserva serial primary key,	
+	nome_hospe varchar (30),
+	data_inicio date,
+	data_fim date,
+	valor_total numeric(10,2),
+	fk_hospede int references Hospedes (id_hospede),
+	fk_propriedade int references Propriedades (id_propriedade)
+);
